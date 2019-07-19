@@ -3,6 +3,9 @@ import axios from "axios";
 import PersonCard from "./components/PersonCard.js";
 import './App.css';
 
+
+
+
 const App = (props) => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -26,14 +29,15 @@ const App = (props) => {
     
 
 const arrayPeople = Array.from(people);
-arrayPeople.forEach(person => console.log(person.name));
+
 
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <div>
+
+      <div id="card-container">
       {arrayPeople.map(person => (
-        <PersonCard key={person.name} name={person.name} gender={person.gender} homeworld={person.homeworld.name} />
+        <PersonCard  key={person.name} name={person.name} eyecolor={person.eye_color} homeworld={person.homeworld} />
       ))}
       </div>
     </div>
