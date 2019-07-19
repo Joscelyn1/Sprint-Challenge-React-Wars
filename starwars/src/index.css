@@ -5,3 +5,14 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+#card-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ui.card.mycard {
+  margin: 10px;
+}
